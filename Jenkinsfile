@@ -14,12 +14,12 @@ pipeline {
         }
         stage('Add Jenkins') {
             steps {
-                 sh 'echo "Jenkins" > multiple.txt'
+                 sh 'echo "Jenkins" >> multiple.txt'
             }
         }
         stage('Add Workspace') {
             steps {
-                 sh 'echo "Workspace" > multiple.txt'
+                 sh 'echo "Workspace" >> multiple.txt'
             }
         }
         stage('show multiple.txt') {
